@@ -1,0 +1,46 @@
+{
+  "RootNamespace": "CascadedEditorsSample",
+  "ServerTypings": {
+    "LocalTexts": true
+  },
+  "Restore": {
+    "Exclude": [
+      "/wwwroot/Scripts/serenity/Serenity.CoreLib*.*"
+    ]
+  },
+  "Connections": [
+    {
+      "Key": "Default",
+      "Tables": [
+        {
+          "Tablename": "gen.City",
+          "Identifier": "City",
+          "Module": "GeneralSettings",
+          "PermissionKey": "GeneralSettings:City"
+        },
+        {
+          "Tablename": "gen.Country",
+          "Identifier": "Country",
+          "Module": "GeneralSettings",
+          "PermissionKey": "GeneralSettings:Country"
+        },
+        {
+          "Tablename": "gen.Customer",
+          "Identifier": "Customer",
+          "Module": "GeneralSettings",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "gen.District",
+          "Identifier": "District",
+          "Module": "GeneralSettings",
+          "PermissionKey": "GeneralSettings:District"
+        }
+      ]
+    }
+  ],
+  "UpgradeInfo": {
+    "InitialType": "Community",
+    "InitialVersion": "6.0.3.0"
+  }
+}
